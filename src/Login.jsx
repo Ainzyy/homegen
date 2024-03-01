@@ -1,3 +1,4 @@
+import adminIcon from "/adminIcon.svg";
 function Login() {
   return (
     <>
@@ -6,14 +7,13 @@ function Login() {
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
               className="mx-auto h-10 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              src={adminIcon}
               alt="Homegen"
             />
-            <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+            <h2 className="mt-2 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
               Admin
             </h2>
           </div>
-
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             <form className="space-y-6" action="#" method="POST">
               <div>
