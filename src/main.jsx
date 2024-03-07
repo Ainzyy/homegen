@@ -1,10 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Login from "./Login.jsx";
-import "./index.css";
+import { BrowserRouter } from "react-router-dom";
+
+import Login from "./pages/Login/Login";
+import Dashboard from "./pages/Dashboard/Dashboard";
+
+import "./css/index.css";
+import "./css/satoshi.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Login />
+    <BrowserRouter>
+      <Dashboard />
+    </BrowserRouter>
   </React.StrictMode>
 );
